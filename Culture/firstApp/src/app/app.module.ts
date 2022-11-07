@@ -10,6 +10,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DiaglogCComponent } from './diaglog-c/diaglog-c.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -18,6 +19,7 @@ import { DiaglogCComponent } from './diaglog-c/diaglog-c.component';
     AppComponent,
     HomeComponentComponent,
     DiaglogCComponent,
+    LoginComponent,
     
   ],
   imports: [
