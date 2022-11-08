@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { DiaglogCComponent } from '../diaglog-c/diaglog-c.component';
-import { NgDialogAnimationService } from "ng-dialog-animation";
 
 
 @Component({
@@ -10,16 +9,14 @@ import { NgDialogAnimationService } from "ng-dialog-animation";
   styleUrls: ['./home-component.component.css']
 })
 export class HomeComponentComponent implements OnInit {
-  constructor(public dialog: NgDialogAnimationService) {}
+  constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DiaglogCComponent, {
+    this.dialog.open(DiaglogCComponent, {
       width: '50%',
-      height:'70%',
-      animation:{to:"aside"},
-      position: { rowEnd: "0" },
-      
-      
+      height:'50%',
+    
+          
     });
   }
   ngOnInit(): void {
