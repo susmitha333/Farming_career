@@ -11,6 +11,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DiaglogCComponent } from './diaglog-c/diaglog-c.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+
+
 
 
 
@@ -20,6 +27,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponentComponent,
     DiaglogCComponent,
     LoginComponent,
+    RegisterUserComponent,
+
     
   ],
   imports: [
@@ -29,7 +38,10 @@ import { LoginComponent } from './login/login.component';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
